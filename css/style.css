@@ -1,0 +1,307 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+    color: #333333;
+}
+
+header {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 80px;
+}
+
+nav {
+    background-color: #333333;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    padding: 8px;
+}
+
+nav a:hover {
+    background-color: navy;
+}
+
+main {
+    min-height: 400px;
+}
+
+.content-section {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.banner {
+    text-align: center;
+    background-color: lightblue;
+    padding: 40px;
+}
+
+.banner h2 {
+    margin-top: 0;
+}
+
+
+/* --------------------------------
+   Buttons
+-------------------------------- */
+
+.button {
+    background-color: navy;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: blue;
+}
+
+
+/* --------------------------------
+   Product Section
+-------------------------------- */
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid gray;
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.price {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* --------------------------------
+   Why Choose Us
+-------------------------------- */
+
+.feature-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.feature-box {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+}
+
+
+/* --------------------------------
+   Product Table
+-------------------------------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: lightgray;
+}
+
+
+/* --------------------------------
+   Contact Information
+-------------------------------- */
+
+.contact-box {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+
+/* --------------------------------
+   Contact Form
+-------------------------------- */
+
+.form-container {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+/* Text Fields */
+
+input[type=text], input[type=email], input[type=tel], select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+
+/* --------------------------------
+   Fieldset
+-------------------------------- */
+
+fieldset {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid gray;
+}
+
+legend {
+    font-weight: bold;
+}
+
+
+/* --------------------------------
+   Radio Buttons
+-------------------------------- */
+
+.radio-option {
+    display: block;
+    margin: 8px 0;
+}
+
+.radio-option input {
+    width: auto;
+    margin-right: 5px;
+}
+
+
+/* --------------------------------
+   Checkbox
+-------------------------------- */
+
+.checkbox-option {
+    display: block;
+    margin: 15px 0;
+}
+
+.checkbox-option input {
+    width: auto;
+    margin-right: 5px;
+}
+
+
+/* --------------------------------
+   Reset Button
+-------------------------------- */
+
+input[type=reset] {
+    padding: 8px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+/* --------------------------------
+   Footer
+-------------------------------- */
+
+footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* --------------------------------
+   Simple Responsive Design
+-------------------------------- */
+
+@media screen and (max-width: 700px) {
+
+    .product-grid,
+    .feature-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card,
+    .feature-box {
+        width: 90%;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px;
+    }
+
+    .contact-box,
+    .form-container {
+        width: 90%;
+    }
+}
+    .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    gap: 20px;
+    max-width: 900px;
+    margin:0 auto;
+}
